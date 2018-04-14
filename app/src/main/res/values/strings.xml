@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Notely</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="deleted_label">Deleted</string>
+    <string name="undo_label"><u>Undo</u></string>
+    <string name="edit_note_activity">Edit Note</string>
+    <string name="add_note_activity">Add Note</string>
+    <string name="note_name">Note Name</string>
+    <string name="note_description">Note Description</string>
+    <string name="err_msg_name">Field cannot be empty</string>
+    <string name="category_type">Category Type</string>
+    <string name="poem_category">Poem</string>
+    <string name="story_category">Story</string>
+    <string name="add_note">Add Note</string>
+</resources>

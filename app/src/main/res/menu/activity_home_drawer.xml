@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/filter"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Filter" />
+    </group>
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/hearted"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Hearted" />
+        <item
+            android:id="@+id/favorite"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Favorite" />
+        <item
+            android:id="@+id/poem"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Poem" />
+        <item
+            android:id="@+id/story"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Story" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/apply"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Apply" />
+    </group>
+
+</menu>

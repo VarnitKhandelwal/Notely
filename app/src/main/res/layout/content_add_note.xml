@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.android.varnit.android_assignment.activity.AddNoteActivity"
+    tools:showIn="@layout/activity_add_note">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/note_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/note_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/note_name"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/note_description_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/note_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/note_description"
+                android:minHeight="@dimen/app_bar_height"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_20sp"
+            android:text="@string/category_type"
+            android:layout_marginTop="@dimen/dimen_20dp"/>
+        <RadioGroup
+            android:id="@+id/category_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_gravity="center">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/poem_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/poem_category"
+                android:padding="@dimen/dimen_10dp"
+                android:textSize="@dimen/dimen_20sp"
+                android:checked="true"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/story_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/story_category"
+                android:padding="@dimen/dimen_10dp"
+                android:textSize="@dimen/dimen_20sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
